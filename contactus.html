@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Registeration Form </title>
-  </head>
-  <body>
-    <h2> Contact Us</h2>
-    <form>
+
+<head>
+  <title>Registeration Form</title>
+   <!-- <p>this is font link</p> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+
+  <style>
+
+    *{
+      font-family: "Roboto Slab", serif;
+    }
+
+    label {
+      color: rgb(32, 219, 219);
+      font-size: x-large;
+    }
+
+    input {
+      width: 400px;
+      height: 25px;
+      border-radius: 10px;
+      border: 1px solid burlywood;
+      color: rgb(136, 20, 7);
+    }
+
+    input[type="text"] {
+      text-transform: capitalize;
+    }
+
+    input[type="email"] {
+      color: chocolate;
+      color: rgb(78, 0, 74);
+    }
+
+    #submit:hover {
+      background-color: rgb(213, 140, 44);
+      color: blue;
+    }
+
+    button[type="reset"]:hover {
+      background-color: rgb(213, 140, 44);
+      color: blue;
+    }
     
-            <legend> Student Registration Form </legend>
-     <table>
-        <tbody>
-            <tr> 
-                <td> <label > Full Name  </label> </td>
-                <td> <input type="text"   placeholder="Max character length=14"> </td>
-            </tr>
-           
-            <tr>
-                <td> <label > Mobile Number: </label> </td>
-                <td> <input type="number" > </td>
-                
-            </tr>
-            <tr>
-                <td> <label> Email: </label> </td>
-                <td> <input type="email" placeholder="Ex.abc@gmail.com">  </td>
-            </tr>
 
-              <tr>
-                <td><label> Enquiry:</label></td>
-                <td><textarea rows="5" cols="40"></textarea></td>
-                
-              </tr>
-              <tr>
-                
-                <td><button type="submit">submit</button> </td>
-                <td><button type="clear">clear</button> </td>
+  </style>
+</head>
 
-              </tr>
+<body>
+  <h2>Contact Us</h2>
+  <form>
+    <legend> <b>Student Registration Form</b></legend>
+    <table>
+      <tbody>
+        <tr>
+          <td><label> Full Name </label></td>
+          <td><input type="text" placeholder="Max character length=14" /></td>
+        </tr>
 
+        <tr>
+          <td><label> Mobile Number: </label></td>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <td><label> Email: </label></td>
+          <td><input type="email" placeholder="Ex.abc@gmail.com" /></td>
+        </tr>
 
+        <tr>
+          <td><label> Enquiry:</label></td>
+          <td><textarea rows="5" cols="40"></textarea></td>
+        </tr>
+        <tr>
+          <td><button type="submit" id="submit">submit</button></td>
+          <td><button type="reset">Reset</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</body>
 
-        </tbody>
-     </table>
-    
-    </form>
-  </body>
 </html>
